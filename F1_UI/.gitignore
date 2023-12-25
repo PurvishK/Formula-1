@@ -12,6 +12,10 @@ npm-debug.log
 yarn-error.log
 
 # IDEs and editors
+.idea
+/.idea
+./../.idea
+./../.idia
 .idea/
 .project
 .classpath
@@ -46,3 +50,6 @@ Thumbs.db
 !/.vscode/extensions.json
 !/.vscode/launch.json
 !/.vscode/tasks.json
+
+
+
