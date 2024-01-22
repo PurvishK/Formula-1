@@ -1,0 +1,265 @@
+.card-container {
+  box-sizing: border-box;
+  padding: 1rem;
+  height: 92vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow-y: scroll;
+}
+
+.card {
+  width: 25rem;
+  height: 14rem;
+  border-radius: 8px;
+  border: 2px solid #3a3a3a;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #000;
+  position: relative;
+  margin: 2rem;
+}
+
+.driver-img {
+  position: absolute;
+  bottom: 0;
+  border-radius: 6px;
+  width: 40%;
+  height: 85%;
+  background: url("../../../assets/images/Drivers/nor.png") -110px 0px no-repeat;
+  background-size: 350px;
+}
+
+.driver-team {
+  top: 0;
+  left: 0;
+  padding-left: 1rem;
+  padding-top: 0.6rem;
+  font-family: F1-Bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.driver-name {
+  position: absolute;
+  bottom: 5%;
+  left: 45%;
+  height: fit-content;
+  width: 55%;
+  font-family: F1-Bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.driver-givenName {
+  color: white;
+  font-size: 85%;
+}
+
+.driver-familyName {
+  font-size: 130%;
+}
+
+.driver-country-flag {
+  height: 1.5rem;
+  width: 3.75rem;
+  padding-right: 1.5rem;
+}
+
+.p-progressbar-value .p-progressbar-value-animate::before {
+  background: darkblue;
+}
+
+.ver {
+  background: url("../../../assets/images/drivers/ver.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.per {
+  background: url("../../../assets/images/drivers/per.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.ham {
+  background: url("../../../assets/images/drivers/ham.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.alo {
+  background: url("../../../assets/images/drivers/alo.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.lec {
+  background: url("../../../assets/images/drivers/lec.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.nor {
+  background: url("../../../assets/images/drivers/nor.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.sai {
+  background: url("../../../assets/images/drivers/sai.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.rus {
+  background: url("../../../assets/images/drivers/rus.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.pia {
+  background: url("../../../assets/images/drivers/pia.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.str {
+  background: url("../../../assets/images/drivers/str.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.gas {
+  background: url("../../../assets/images/drivers/gas.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.oco {
+  background: url("../../../assets/images/drivers/oco.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.alb {
+  background: url("../../../assets/images/drivers/alb.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.tsu {
+  background: url("../../../assets/images/drivers/tsu.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.bot {
+  background: url("../../../assets/images/drivers/bot.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.hul {
+  background: url("../../../assets/images/drivers/hul.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.ric {
+  background: url("../../../assets/images/drivers/ric.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.zho {
+  background: url("../../../assets/images/drivers/zho.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.mag {
+  background: url("../../../assets/images/drivers/mag.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.sar {
+  background: url("../../../assets/images/drivers/sar.png") -110px 0 no-repeat;
+  background-size: 350px;
+}
+
+.ASTONMARTIN-logo {
+  width: 3rem;
+  height: 1rem;
+}
+
+.REDBULL-logo {
+  width: 3.04rem;
+}
+
+.MERCEDES-logo {
+  width: 1.25rem;
+}
+
+.FERRARI-logo {
+  height: 1.25rem;
+}
+
+.MCLAREN-logo {
+  width: 1.75rem;
+  height: 1rem;
+}
+
+.ALPINEF1TEAM-logo {
+  width: 3rem;
+}
+
+.WILLIAMS-logo {
+  width: 1.5rem;
+}
+
+.ALPHATAURI-logo {
+  width: 2rem;
+}
+
+.HAASF1TEAM-logo {
+  width: 1.5rem;
+}
+
+.ALFAROMEO-logo {
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a4a4a4;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #7c7c7c;
+}
+
+.driver-position {
+  position: absolute;
+  right: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+}
+.position-num {
+  font-size: 22pt;
+  font-family: F1-Wide, serif;
+}
+
+.position-text {
+  font-size: 8pt;
+  font-family: F1-Bold, serif;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .card {
+    margin: 1rem 0;
+  }
+}

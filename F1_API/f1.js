@@ -1,45 +1,33 @@
 /** @format */
 
 const express = require("express");
-const http = require("http");
+const CORS = require("cors");
 const path = require("path");
-const { Server } = require("socket.io");
 const axios = require("axios");
-///////////////////////////////
 const f1ControllerFile = require("./Controllers/f1_controller");
 const f1Controller = new f1ControllerFile();
-//////////////////////////////
 const PORT = 8842;
 const app = express();
-const server = http.createServer(app);
-const io = new Server(server, {
-	cors: {
-		origin: "*",
-	}
+
+app.use(CORS());
+
+app.get("/getAllDrivers/:year", async (req, res) => {
+  console.log("In get All Drivers");
+  const year = req.params["year"];
+  let allDriversJson = await axios.get(
+    `http://ergast.com/api/f1/${year}/driverStandings.json`,
+  );
+  const seasonDriversStandings =
+    f1Controller.singleSeasonDriverStanding(allDriversJson);
+  res.status(200).send(seasonDriversStandings);
 });
 
-//////////////////////////////////////
-
-
-// app.get("/",(req,res)=>{
-//     res.status(200).sendFile(path.join(__dirname, '/index.html'));
-// })
+function returnData(x) {
+  console.log("return data");
+  return x;
+}
 
 ///////////////////////////////////
-app.get("/getAllDrivers", async (req, res) => {
-	console.log("In get All Drivers");
-	let allDriverXML = await axios.get("http://ergast.com/api/f1/2023/drivers");
-	const allDriversJson = f1Controller.xmlJson(allDriverXML.data.trim());
-
-	console.log(allDriversJson);
-	res.send(allDriversJson);
-});
-
-io.on("connection", (socket) => {
-	console.log("User ", socket, " logged in..");
-});
-
-///////////////////////////////////
-server.listen(PORT, () => {
-	console.log("Running server in ", PORT);
+app.listen(PORT, () => {
+  console.log("Running server in ", PORT);
 });
