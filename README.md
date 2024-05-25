@@ -1,6 +1,6 @@
 # Formula 1 Stats
 ## Overview
-Welcome to the Formula 1 Stats Website Created by Purvish, Kodi! This platform provides comprehensive statistics, historical data, and up-to-date information about the world of Formula 1 racing. 
+Welcome to the Formula 1 Stats Website Created by Purvish, Kodi! This platform provides comprehensive statistics, historical data, and up-to-date information about the world of Formula 1 racing.
 Whether you are a die-hard F1 fan, a casual viewer, or a stats enthusiast, our website offers a rich repository of data enhance your understanding of the sport.
 
 ## Features
@@ -24,7 +24,7 @@ Whether you are a die-hard F1 fan, a casual viewer, or a stats enthusiast, our w
 ### 5. **Circuits**
 - **Track Information**: Detailed profiles of each circuit, including layout, length, and history.
 - **Lap Records**: Discover the fastest laps and notable performances on each track.
-  
+
 ## How to Use
 
 ### Navigation
