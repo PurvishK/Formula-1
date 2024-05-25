@@ -29,9 +29,7 @@
       <span style="display: flex; justify-content: space-between">
         <span
           class="driver-familyName"
-          [ngClass]="
-            getTeamColorClasses( driver['Constructors'][0]['name'])
-          "
+          [ngClass]="getTeamColorClasses(driver['Constructors'][0]['name'])"
           >{{ driver["Driver"]["familyName"] }}
         </span>
         <img
@@ -43,9 +41,7 @@
 
     <div
       class="driver-team"
-      [ngClass]="
-        getTeamColorClasses(driver['Constructors'][0]['name'])
-      "
+      [ngClass]="getTeamColorClasses(driver['Constructors'][0]['name'])"
     >
       <span>{{ driver["Constructors"][0]["name"] }}</span>
       <img
@@ -53,6 +49,32 @@
         [ngClass]="teamLogoClasses(driver['Constructors'][0]['name'])"
         [src]="teamLogoSrc(driver['Constructors'][0]['name'])"
       />
+    </div>
+
+    <div class="driver-details">
+      <div class="driver-code">
+        <span
+          style="
+            border-left: 0.25rem solid red;
+            padding-left: 0.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          {{ driver["Driver"]["code"] }}</span
+        >
+      </div>
+
+      <div class="driver-points">
+        <span class="value">{{ driver["points"] }}</span>
+        <span class="title">Points</span>
+      </div>
+
+      <div class="driver-wins">
+        <span class="value">{{ driver["wins"] }}</span>
+        <span class="title">Wins</span>
+      </div>
     </div>
   </div>
 </div>

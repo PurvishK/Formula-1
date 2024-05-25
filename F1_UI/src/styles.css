@@ -85,3 +85,9 @@ body {
   font-family: "F1-Wide";
   src: url("../src/assets/Font/Formula1-Wide.otf");
 }
+
+@font-face {
+  font-family: "F1-Black";
+  src: url("../src/assets/Font/Formula1-Black.ttf");
+}
+

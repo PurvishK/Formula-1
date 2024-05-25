@@ -22,7 +22,7 @@ export class DriversComponent implements OnInit {
     }, 500);
   }
 
-  getDriversStanding(year = '2023') {
+  getDriversStanding(year = '2024') {
     this.endPoints.getAllDriver(year).subscribe((res) => {
       this.drivers = res;
       console.log(this.drivers);

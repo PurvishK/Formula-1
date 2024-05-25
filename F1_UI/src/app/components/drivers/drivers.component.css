@@ -25,7 +25,7 @@
   border-radius: 6px;
   width: 40%;
   height: 85%;
-  background: url("../../../assets/images/Drivers/nor.png") -110px 0px no-repeat;
+  background: url("../../../assets/images/Drivers/nor.png") -115px 0px no-repeat;
   background-size: 350px;
 }
 
@@ -64,111 +64,113 @@
 
 .driver-country-flag {
   height: 1.5rem;
-  width: 3.75rem;
-  padding-right: 1.5rem;
+  width: 2.25rem;
+  margin-right: 1.5rem;
+  border-radius: 2px;
 }
 
 .p-progressbar-value .p-progressbar-value-animate::before {
   background: darkblue;
 }
 
+
 .ver {
-  background: url("../../../assets/images/drivers/ver.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/ver.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .per {
-  background: url("../../../assets/images/drivers/per.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/per.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .ham {
-  background: url("../../../assets/images/drivers/ham.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/ham.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .alo {
-  background: url("../../../assets/images/drivers/alo.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/alo.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .lec {
-  background: url("../../../assets/images/drivers/lec.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/lec.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .nor {
-  background: url("../../../assets/images/drivers/nor.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/nor.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .sai {
-  background: url("../../../assets/images/drivers/sai.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/sai.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .rus {
-  background: url("../../../assets/images/drivers/rus.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/rus.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .pia {
-  background: url("../../../assets/images/drivers/pia.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/pia.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .str {
-  background: url("../../../assets/images/drivers/str.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/str.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .gas {
-  background: url("../../../assets/images/drivers/gas.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/gas.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .oco {
-  background: url("../../../assets/images/drivers/oco.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/oco.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .alb {
-  background: url("../../../assets/images/drivers/alb.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/alb.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .tsu {
-  background: url("../../../assets/images/drivers/tsu.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/tsu.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .bot {
-  background: url("../../../assets/images/drivers/bot.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/bot.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .hul {
-  background: url("../../../assets/images/drivers/hul.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/hul.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .ric {
-  background: url("../../../assets/images/drivers/ric.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/ric.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .zho {
-  background: url("../../../assets/images/drivers/zho.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/zho.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .mag {
-  background: url("../../../assets/images/drivers/mag.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/mag.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
 .sar {
-  background: url("../../../assets/images/drivers/sar.png") -110px 0 no-repeat;
+  background: url("../../../assets/images/drivers/sar.png") -115px 0 no-repeat;
   background-size: 350px;
 }
 
@@ -250,6 +252,58 @@
 .position-text {
   font-size: 8pt;
   font-family: F1-Bold, serif;
+}
+
+.driver-details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  max-width: 50%;
+}
+
+.driver-code{
+  display: flex;
+  flex-direction: row;
+  gap: 0.1rem;
+  align-items: end;
+  font-family: F1-Bold;
+}
+
+.driver-team-line{
+  display: block;
+  width: 0.25rem;
+  height: 1.5rem;
+  background: red;
+}
+
+.driver-points, .driver-wins{
+  display: flex;
+  flex-direction: column;
+}
+
+.driver-wins{
+  justify-content: end;
+}
+
+.driver-points .title, .driver-wins .title{
+  font-family: F1-Regular;
+  font-size: 75%;
+  text-align: center;
+}
+
+.driver-points .value{
+  font-family: F1-Black;
+  font-size: 175%;
+}
+
+.driver-wins .value{
+  font-family: F1-Black;
+  font-size: 125%;
 }
 
 @media screen and (max-width: 600px) {

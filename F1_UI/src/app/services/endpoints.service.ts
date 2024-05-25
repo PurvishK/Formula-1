@@ -7,7 +7,7 @@ import { Observable, BehaviorSubject } from 'rxjs';
 })
 export class EndpointsService {
   constructor(private http: HttpClient) {}
-  url = 'http://localhost:8842';
+  url = '/api';
 
   getAllDriver(year: string) {
     const mainUrl = this.url + `/getAllDrivers/${year}`;
