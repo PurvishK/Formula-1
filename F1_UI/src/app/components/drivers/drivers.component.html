@@ -1,0 +1,80 @@
+<p-progressBar
+  *ngIf="loading"
+  mode="indeterminate"
+  [style]="{ height: '6px', position: 'absolute', width: '100%' }"
+></p-progressBar>
+
+<div class="card-container">
+  <div *ngFor="let driver of drivers" class="card">
+    <div
+      class="driver-img"
+      [ngClass]="driver['Driver']['code']?.toLowerCase()"
+    ></div>
+
+    <div class="driver-position">
+      <span
+        class="position-num"
+        [ngClass]="getTeamColorClasses(driver['Constructors'][0]['name'])"
+      >
+        {{
+          driver.position.length < 2 ? "0" + driver.position : driver.position
+        }}</span
+      >
+
+      <span class="position-text">Position</span>
+    </div>
+
+    <div class="driver-name">
+      <span class="driver-givenName">{{ driver["Driver"]["givenName"] }}</span>
+      <span style="display: flex; justify-content: space-between">
+        <span
+          class="driver-familyName"
+          [ngClass]="getTeamColorClasses(driver['Constructors'][0]['name'])"
+          >{{ driver["Driver"]["familyName"] }}
+        </span>
+        <img
+          class="driver-country-flag"
+          [src]="countryFlag(driver.Driver.nationality)"
+        />
+      </span>
+    </div>
+
+    <div
+      class="driver-team"
+      [ngClass]="getTeamColorClasses(driver['Constructors'][0]['name'])"
+    >
+      <span>{{ driver["Constructors"][0]["name"] }}</span>
+      <img
+        class="team-logo"
+        [ngClass]="teamLogoClasses(driver['Constructors'][0]['name'])"
+        [src]="teamLogoSrc(driver['Constructors'][0]['name'])"
+      />
+    </div>
+
+    <div class="driver-details">
+      <div class="driver-code">
+        <span
+          style="
+            border-left: 0.25rem solid red;
+            padding-left: 0.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          {{ driver["Driver"]["code"] }}</span
+        >
+      </div>
+
+      <div class="driver-points">
+        <span class="value">{{ driver["points"] }}</span>
+        <span class="title">Points</span>
+      </div>
+
+      <div class="driver-wins">
+        <span class="value">{{ driver["wins"] }}</span>
+        <span class="title">Wins</span>
+      </div>
+    </div>
+  </div>
+</div>

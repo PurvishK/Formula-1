@@ -1,0 +1,126 @@
+.nav-bar-container {
+  /*position: fixed;*/
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  background-color: black;
+  color: white;
+  font-family: F1-Bold;
+}
+
+.page-logo{
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.page-logo img{
+  width: 100%;
+  height: 55%;
+  padding: 0 1rem;
+}
+
+.nav-bar-left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-bar-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12pt;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  float: left;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: rgb(255,24,0);
+  transition: color 0.25s;
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  cursor: pointer;
+
+}
+
+@media screen and (max-width: 950px) {
+  .nav-bar-left {
+    width: 30%;
+  }
+
+  .nav-bar-right {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .nav-bar-left {
+    width: 25%;
+  }
+
+  .nav-bar-right {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 11pt;
+  }
+
+  li {
+    padding: 0 0.70rem;
+  }
+
+  .page-logo img{
+    width: 80%;
+    height: 50%;
+    padding: 0 0.70rem;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  .nav-bar-right{
+    font-size: 10pt;
+  }
+
+  li {
+    padding: 0 0.70rem;
+  }
+
+  .page-logo img{
+    width: 80%;
+    height: 40%;
+    padding: 0 0.70rem;
+  }
+
+}
