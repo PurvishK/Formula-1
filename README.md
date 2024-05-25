@@ -1,7 +1,7 @@
-# Formula 1 Stats Website - README
-
+# Formula 1 Stats
 ## Overview
-Welcome to the Formula 1 Stats Website! This platform provides comprehensive statistics, historical data, and up-to-date information about the world of Formula 1 racing. Whether you are a die-hard F1 fan, a casual viewer, or a stats enthusiast, our website offers a rich repository of data to satisfy your curiosity and enhance your understanding of the sport.
+Welcome to the Formula 1 Stats Website Created by Purvish, Kodi! This platform provides comprehensive statistics, historical data, and up-to-date information about the world of Formula 1 racing. 
+Whether you are a die-hard F1 fan, a casual viewer, or a stats enthusiast, our website offers a rich repository of data enhance your understanding of the sport.
 
 ## Features
 
